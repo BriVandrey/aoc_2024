@@ -19,7 +19,7 @@ def get_total_distance(data):
     for i in range(0, len(list_a)):
         a, b = min(list_a), min(list_b)
         distances.append(abs(a-b))
-        del list_a[list_a.index(a)] # index of first value only
+        del list_a[list_a.index(a)]  # index of first value only
         del list_b[list_b.index(b)]
 
     return sum(distances)

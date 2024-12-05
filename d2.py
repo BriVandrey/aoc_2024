@@ -43,5 +43,5 @@ def solve_d2(data_path):
     data = utility.read_file(data_path)
     safe_count = check_if_safe(data)  # part 1
     print(f"There are {str(safe_count)} safe reports.")
-    adjusted_count = check_if_safe(data, use_dampener=True)
+    adjusted_count = check_if_safe(data, use_dampener=True)  # part 2
     print(f"There are {str(adjusted_count)} safe reports when using the problem dampener.")
